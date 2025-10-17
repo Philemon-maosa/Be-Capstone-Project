@@ -41,13 +41,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party
-    'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
+    
 
-    #local apps
-    'users',
+    #other apps
+    'rest_framework',
     'recipes',
+    'users',
+    'pantry',
+    'kitchenlist',
 ]
 
 MIDDLEWARE = [
@@ -155,4 +158,4 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # (Optional during early dev you can use:)
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
