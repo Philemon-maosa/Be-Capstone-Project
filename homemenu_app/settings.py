@@ -15,12 +15,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Production-safe settings
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "dev-secret-key-change-this")
-DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
+# Force DEBUG=False for deployment
+DEBUG = False
+
+# Allow your PythonAnywhere domain
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    "yourusername.pythonanywhere.com",  # <-- replace with your actual PythonAnywhere domain
+    "maosa.pythonanywhere.com",
 ]
 
 # -------------------------------------------------
