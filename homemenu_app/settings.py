@@ -1,4 +1,5 @@
 from datetime import timedelta
+import dj_database_url
 
 """
 Django settings for homemenu_app project.
